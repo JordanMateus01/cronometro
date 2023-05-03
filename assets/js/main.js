@@ -5,7 +5,6 @@ function relogio(){
         return data.toLocaleTimeString("pt-BR", {hour12: false, timeZone: "GMT"});
     }
     
-    
     const relogio = document.querySelector(".relogio");
     let seconds = 0;
     let timer;
