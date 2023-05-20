@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #144c67;
-    --primary-color-darker: #0e3549;
+    --primary-color: #1d0536;
+    --primary-color-darker: #16516e;
 }
 
 * {
-    box-sizing: border-box;
-    outline: 0;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    padding: 13% 15%;
     background: var(--primary-color);
     font-family: "Open sans", sans-serif;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 3em;
 }
 
 .container {
-    max-width: 640px;
+    align-items: center;
+    width: 50%;
     margin: 50px auto;
-    background: #fff;
-    padding: 20px;
+    background: #ffffff;
+    padding: 2% 4%;
     border-radius: 10px;
 }
 
-form input, form label, form button {
+form input, form label {
     display: block;
-    width: 100%;
+    width: 50%;
     margin-bottom: 10px;
 }
 
@@ -43,25 +44,50 @@ form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button {
+button {
     border: none;
     background: var(--primary-color);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
+    color: #ffffff;
+    font-size: 1,125rem;
+    font-weight: 600;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 7%;
+    border-radius: 10%;
+    padding: 2% 2%;
 }
 
-form button:hover{
+p {
+    text-align: center;
+}
+
+button:hover{
     background: var(--primary-color-darker);
 }
 
 .relogio {
     font-size: 3em;
+    text-align: center;
 }
 
 .pausado {
     color: red;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 10px;
+    }
+    .container {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .relogio {
+        padding: 2% 2%;
+        text-align: center;
+    }
+
+    button {
+        padding: 2% 4%;
+    }
 }
