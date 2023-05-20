@@ -73,13 +73,22 @@ button:hover{
     color: red;
 }
 
+.credito {
+    font-size: 8px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1px;
+    right: 100px;
+}
+
 @media (max-width: 768px) {
     :root {
         font-size: 10px;
     }
     .container {
-        width: 70%;
-        justify-content: center;
+        box-sizing: border-box;
+        width: 90%;
+        
     }
 
     .relogio {
@@ -89,5 +98,9 @@ button:hover{
 
     button {
         padding: 2% 4%;
+    }
+    
+    .credito{
+        text-align: center;
     }
 }
